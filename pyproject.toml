@@ -35,12 +35,16 @@ classifiers = [
     "Typing :: Typed",
 ]
 # add your package dependencies here
-dependencies = []
+dependencies = ["numpy"]
 
 # https://peps.python.org/pep-0621/#dependencies-optional-dependencies
 # add dependencies for "extra" features here.  Not dev dependencies.
-# [project.optional-dependencies]
-# name = ["dependency"]
+[project.optional-dependencies]
+viz = [
+    "matplotlib",
+    "trimesh",
+    "scikit-image",
+]
 
 [project.urls]
 homepage = "https://github.com/jojoelfe/test-tensors"
